@@ -7,7 +7,7 @@ class Home extends Component {
       <div>
         <h2>Home</h2>
         <p> My awesome Home component </p>
-        <Link to="/">Home</Link>
+        {/* <Link to="/">Home</Link> */}
       </div>
     );
   }

@@ -8,12 +8,15 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <Link to="/home">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/users">Users</Link>
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
-        <Route path="/users" component={<Users greetingsMessage="Good Morning" />} />
+        {/* utilizar ":" (doi pontos) siginifica que a palavra seguinte sera um alias para uma variável a ser definida na url */}
+        <Route path="/users/:id" render={(props) => <Users {...props} greetingsMessage="Good Morning" /> } />
+        <nav className="nav-style">
+          <div><Link to="/home">Home</Link></div>
+          <div><Link to="/users">Users</Link></div>
+          <div><Link to="/about">About</Link></div>
+        </nav>
       </BrowserRouter>
     );
   }
