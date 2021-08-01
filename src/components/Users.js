@@ -6,6 +6,7 @@ class Users extends Component {
       <div>
         <h2>Users</h2>
         <p> My awesome Users component </p>
+        <Link to="/">Home</Link>
       </div>
     );
   }
