@@ -1,0 +1,9 @@
+.nav-style {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+}
+
+.link {
+  margin: 10px
+}
